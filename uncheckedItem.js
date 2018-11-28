@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, FlatList } from 'react-native'
 import { Icon } from "native-base";
+import { createStackNavigator } from 'react-navigation';
 export default class UncheckedItem extends Component {
     constructor(props) {
         super(props)
@@ -39,6 +40,18 @@ export default class UncheckedItem extends Component {
                 }
             ]
         }
+    }
+
+
+    static navigationOptions = {
+        title: "รายการครุภัณฑ์ที่ยังไม่ได้ตรวจนับ",
+        headerStyle: {
+            backgroundColor: 'orange',
+        },
+        headerTintColor: 'white',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
     }
 
 
