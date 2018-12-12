@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // import { createStackNavigator } from 'react-navigation';
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import PageHome from './pageHome';
+import Login from './Login';
 import UncheckedItem from './uncheckedItem';
 import Report from './reportBrokenBarcode';
 
@@ -11,12 +11,12 @@ const RootStack = createStackNavigator(
     {
         //all pages for navigation
         Report: Report,
-        Home: PageHome,
+        Login: Login,
         UncheckedItem: UncheckedItem,
     },
     {
         //starting page
-        initialRouteName: 'UncheckedItem',
+        initialRouteName: 'Login',
     }
 );
 
