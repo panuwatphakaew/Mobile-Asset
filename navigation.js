@@ -9,6 +9,8 @@ import locationitemmiss from './locationItemMiss';
 import roomItemMiss from './roomItemMiss';
 import detailItem from './detailItem';
 import itemMiss from './itemMiss';
+import AssetDetails from './AssetDetails';
+import ViewAssets from './ViewAssets';
 
 
 // -------------- Navigation Stack -----------------
@@ -22,10 +24,12 @@ const RootStack = createStackNavigator(
         roomItemMiss:roomItemMiss,
         detailItem:detailItem,
         itemMiss:itemMiss,
+        AssetDetails:AssetDetails,
+        ViewAssets:ViewAssets,
     },
     {
         //starting page
-        initialRouteName: 'detailItem',
+        initialRouteName: 'Login',
     }
 );
 
