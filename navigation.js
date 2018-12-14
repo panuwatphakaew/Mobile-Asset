@@ -33,6 +33,8 @@ import Getitem from "./Getitem";
 import BossSend from "./BossSend";
 import Bossitems from "./Bossitems";
 
+import Staffhome from "./Staffhome";
+
 
 // -------------- Navigation Stack -----------------
 const RootStack = createStackNavigator(
@@ -66,6 +68,7 @@ const RootStack = createStackNavigator(
         Getitem:Getitem,
         BossSend:BossSend,
         Bossitems:Bossitems,
+        Staffhome:Staffhome,
     },
     {
         //starting page

@@ -23,7 +23,7 @@ export default class HomeScreen extends Component {
         }else if(user=="user01"&&pass=="1234"){
             this.props.navigation.navigate('NormalEmployees')
         }else if(user=="user02"&&pass=="1234"){
-            this.props.navigation.navigate('Locationitemmiss')
+            this.props.navigation.navigate('Staffhome')
         }else if(user=="user03"&&pass=="1234"){
             this.props.navigation.navigate('secretaryhome')
         }else if(user=="user04"&&pass=="1234"){
