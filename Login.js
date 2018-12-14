@@ -25,9 +25,9 @@ export default class HomeScreen extends Component {
         }else if(user=="user02"&&pass=="1234"){
             this.props.navigation.navigate('Locationitemmiss')
         }else if(user=="user03"&&pass=="1234"){
-            this.props.navigation.navigate('UncheckedItem')
+            this.props.navigation.navigate('secretaryhome')
         }else if(user=="user04"&&pass=="1234"){
-            this.props.navigation.navigate('UncheckedItem')
+            this.props.navigation.navigate('Bosshome')
         }else{
             Alert.alert(' Username หรือ Password ไม่ถูกต้อง')
         }

@@ -75,7 +75,7 @@ export default class Sec_transfer_3_8 extends Component {
                     data={this.state.listData}
                     renderItem={({ item, index }) => 
 
-                        <TouchableOpacity style={styles.flatStyle} onPress={() => this.setModalVisible(index)}>
+                        <TouchableOpacity style={styles.flatStyle} onPress={() => this.setModalVisible(index)} >
                             <View style={{ flexDirection: 'column' }}>
                                 <Text style={styles.flatTextStyle}>{item.department}</Text>
                             </View>

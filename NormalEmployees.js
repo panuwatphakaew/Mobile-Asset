@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Image, View, StyleSheet } from 'react-native';
+import { Text, Image, View, StyleSheet ,TouchableOpacity} from 'react-native';
 import { Icon } from 'native-base';
 
 export default class NormalEmployee extends Component {
@@ -32,16 +32,16 @@ export default class NormalEmployee extends Component {
             <Text>____________________________________________</Text>
             <Text> </Text>
 
-            <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-              <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row', justifyContent: 'space-between'}} >
+              <TouchableOpacity style={{flexDirection: 'row'}} onPress={() => this.props.navigation.navigate('AssetDetails')}>
                 <Icon type='FontAwesome' name='qrcode'/>
                 <Text>Scan Code</Text>
-              </View>
+              </TouchableOpacity>
 
-              <View style={{flexDirection: 'row'}}>
+              <TouchableOpacity style={{flexDirection: 'row'}} onPress={() => this.props.navigation.navigate('ViewAssets')}>
                 <Icon type='EvilIcons' name='search'/>
                 <Text>ดูรายการทั้งหมด</Text>
-              </View>
+              </TouchableOpacity>
               
             </View>
 

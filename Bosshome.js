@@ -47,11 +47,11 @@ export default class ProjectMob extends Component {
                 <View style={styles.rowflat}>
                 <TouchableOpacity>
                 <View style={{flexDirection: 'row'}}>
-                <Icon name="qrcode-scan" type="MaterialCommunityIcons" style={styles.icon}></Icon>
+                <Icon name="qrcode-scan" type="MaterialCommunityIcons" style={styles.icon} onPress={() => this.props.navigation.navigate('AssetDetails')}></Icon>
                 <Text>สแกน Code</Text>
                 </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('ViewAssets')}  >
                 <View style={{flexDirection: 'row'}}>
                 <Icon name="find-in-page" type="MaterialIcons" style={styles.icon}></Icon>
                 <Text>ดูรายการทั้งหมด</Text>
@@ -65,13 +65,13 @@ export default class ProjectMob extends Component {
                 <Text style={{textAlign: 'right'}}>5 รายการ</Text>
                 <View style={{borderBottomColor: 'black',borderBottomWidth: 1,}}/>
                 <View style={styles.rowflat}>
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Manage')}>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Bosspremisstion')}>
                 <View style={{flexDirection: 'row'}}>
                 <Icon name="account-edit" type="MaterialCommunityIcons" style={styles.icon}></Icon>
                 <Text>จัดการผู้มีสิทธิ์อนุมัติ</Text>
                 </View>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Main')}>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Bosscomfim')}>
                 <View style={{flexDirection: 'row'}}>
                 <Icon name="find-in-page" type="MaterialIcons" style={styles.icon}></Icon>
                 <Text>ดูรายการทั้งหมด</Text>

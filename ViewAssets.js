@@ -1,41 +1,53 @@
-import React, { Component } from 'react';
-import { Text, View, FlatList } from 'react-native';
-import { SearchBar } from 'react-native-elements';
+import React, { Component } from "react";
+import { Text, View, FlatList,TouchableOpacity,TextInput } from "react-native";
+import { Icon } from "native-base";
+// import { SearchBar } from 'react-native-elements';
 
 export default class HelloWorldApp extends Component {
-    render() {
-        return (
-            <View style={{ flex: 1 }}>
-                <FlatList
-                    data={[
-                        { id: '1000000001', name: 'โต๊ะ' },
-                        { id: '1000000002', name: 'โต๊ะไม้' },
-                        { id: '1000000003', name: 'โปรเจคเตอร์' },
-                        { id: '1000000004', name: 'เก้าอี้' },
-                        { id: '1000000005', name: 'แอร์' },
-                        { id: '1000000006', name: 'โต๊ะยาว' },
-                        { id: '1000000007', name: 'เก้าอี้นวม' },
-                        { id: '1000000008', name: 'ปริ้นเตอร์' },
-                    ]}
-                    keyExtractor={(item, index) => item.id}
-                    renderItem={({ item }) => (
-                        <View>
-                            <SearchBar placeholder="Search" />
-                            <Text> </Text>
-                            <View
-                                style={{
-                                    flexDirection: 'row',
-                                    justifyContent: 'space-between',
-                                    borderBottomWidth: '3',
-                                    padding: 10,
-                                }}>
-                                <Text>{item.id}</Text>
-                                <Text>{item.name}</Text>
-                            </View>
-                        </View>
-                    )}
-                />
-            </View>
-        );
+    static navigationOptions = {
+        title: 'ดูข้อมูลครุภัณฑ์',
+        headerStyle: { //They can be customized later.
+            backgroundColor: 'orange', 
+        },
+        headerTintColor: 'white',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
     }
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+       <View style={{ borderBottomWidth: 2, borderStyle: "solid", borderColor: 'black' }}>
+                    <View style={{ flex: 0, paddingHorizontal: 10, margin: 10, height: 40, flexDirection: "row", alignItems: "center", borderStyle: 'solid', borderWidth: 2, borderColor: 'black', borderRadius: 10 }}>
+                        <Icon name="md-search" type="Ionicons" />
+                        <View style={{ flex: 1 }}>
+                            <TextInput placeholder='search' 
+                               
+                                 />
+                        </View>
+                    </View>
+                    </View>
+        <FlatList
+          data={[{ key: "0",id:'100000000001',name:'โต๊ะ' },
+          { key: "1",id:'100000000001',name:'โต๊ะ' },
+          { key: "2",id:'100000000001',name:'โต๊ะไม้' },
+          { key: "3",id:'100000000001',name:'โปรเจคเตอร์' },
+          { key: "4",id:'100000000001',name:'เก้าอี้' },
+          { key: "5",id:'100000000001',name:'แอร์' },
+          { key: "6",id:'100000000001',name:'โต๊ะยาว' },
+          { key: "7",id:'100000000001',name:'เก้าอี้นวม' },
+          { key: "8",id:'100000000001',name:'xปริ้นเตอร์' },
+          ]}
+          renderItem={({ item }) => 
+          <TouchableOpacity style = {{flexDirection: 'row'}} onPress={() => this.props.navigation.navigate('AssetDetails')}>
+              <Text>{item.id}</Text>
+              <Text>{item.name}</Text>
+              
+          </TouchableOpacity>
+        
+        }
+        />
+      </View>
+    );
+  }
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View, TouchableOpacity, FlatList } from 'react-native'
 import { Icon } from 'native-base'
 import { SearchBar, Button } from 'react-native-elements'
-import { RNCamera } from 'react-native-camera'
+// import { RNCamera } from 'react-native-camera'
 
 const list = [
   {
@@ -39,7 +39,7 @@ export default class Sec_transfer_3_5 extends Component {
   }
 
   static navigationOptions = {
-    title: 'โอนย้ายระหว่างหน่วยงาน',
+    title: 'การเปลี่ยนสถานที่ใช้งาน',
     headerTitleStyle: {
       fontWeight: 'bold'
     }
@@ -68,7 +68,7 @@ export default class Sec_transfer_3_5 extends Component {
           data={this.state.listData}
           renderItem={({ item, index }) =>
 
-            <TouchableOpacity style={styles.flatStyle}>
+            <TouchableOpacity style={styles.flatStyle} onPress={() => this.props.navigation.navigate('Bosslist')}>
               <View style={{ flexDirection: 'column' }}>
                 <Text style={styles.flatTextStyle}>{item.id}               {item.typeItem}</Text>
                 <View style={{ flexDirection: 'row', marginTop: 10 }}>
@@ -82,8 +82,8 @@ export default class Sec_transfer_3_5 extends Component {
           }
         >
         </FlatList>
-
-        <View style={{ padding: 10 }}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('changecreat')}>
+          <View style={{ padding: 10 }}>
           <Button
             icon={{
               name: 'edit',
@@ -93,6 +93,7 @@ export default class Sec_transfer_3_5 extends Component {
             title='สร้างรายการ'
           />
         </View>
+          </TouchableOpacity>
 
       </View>
     )

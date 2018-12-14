@@ -49,7 +49,7 @@ export default class Sec_transfer_3_7 extends Component {
 
                     }
                     <Divider></Divider>
-                    <TouchableOpacity style={{flexDirection: 'row' , justifyContent: 'center', paddingTop:10}}>
+                    <TouchableOpacity style={{flexDirection: 'row' , justifyContent: 'center', paddingTop:10}} onPress={() => this.props.navigation.navigate('selectDepartment')}>
                         <Icon name='results-demographics' type='Foundation'/>
                         <Text style={{paddingLeft: 5, paddingTop: 4}}>เลือกหน่วยงาน</Text>
                     </TouchableOpacity>
