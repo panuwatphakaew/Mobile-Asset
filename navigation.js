@@ -18,6 +18,14 @@ import selectDepartment from "./selectDepartment";
 import transferBetweenDepartment from "./transferBetweenDepartment";
 import comfirmItem from "./comfirmItem";
 
+import BossAddpremit from "./BossAddpremit";
+import BossChangeLocal from "./BossChangeLocal";
+import BossGetApartment from "./BossGetApartment";
+import Bosscomfim from "./Bosscomfim";
+import Bosshome from "./Bosshome";
+import Bosslist from "./Bosslist";
+import Bosspremisstion from "./Bosspremisstion";
+
 
 // -------------- Navigation Stack -----------------
 const RootStack = createStackNavigator(
@@ -37,11 +45,18 @@ const RootStack = createStackNavigator(
         selectDepartment:selectDepartment,
         transferBetweenDepartment:transferBetweenDepartment,
         comfirmItem:comfirmItem,
+        BossAddpremit:BossAddpremit,
+        BossChangeLocal:BossChangeLocal,
+        BossGetApartment:BossGetApartment,
+        Bosscomfim:Bosscomfim,
+        Bosshome:Bosshome,
+        Bosslist:Bosslist,
+        Bosspremisstion:Bosspremisstion,
         
     },
     {
         //starting page
-        initialRouteName: 'Login',
+        initialRouteName: 'NormalEmployees',
     }
 );
 

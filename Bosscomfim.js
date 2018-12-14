@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, StyleSheet, View, Button, TextInput, Image, Picker, FlatList, TouchableOpacity} from 'react-native';
 import { Icon } from 'native-base'
-import { createStackNavigator } from 'react-navigation';
+
 
 export default class ProjectMob extends Component {
     //header bar details (Cannot be shown if the main screen file is missing!!!)
@@ -27,10 +27,10 @@ export default class ProjectMob extends Component {
 
     navi = (index) => {
         switch(index) {
-        case 0: this.props.navigation.navigate('Transfer'); break;
-        case 1: this.props.navigation.navigate('Move'); break;
-        case 2: this.props.navigation.navigate('Receive'); break;
-        case 3: this.props.navigation.navigate('Repair'); break;
+        case 0: this.props.navigation.navigate('BossGetApartment'); break;
+        case 1: this.props.navigation.navigate('BossChangeLocal'); break;
+        case 2: this.props.navigation.navigate('BossGetApartment'); break;
+        case 3: this.props.navigation.navigate('Bosscomfim'); break;
         }
     } 
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View, TouchableOpacity, FlatList } from 'react-native'
 import { Icon } from 'native-base'
 import { SearchBar, Button } from 'react-native-elements'
-import { RNCamera } from 'react-native-camera'
+// import { RNCamera } from 'react-native-camera'
 
 const list = [
   {

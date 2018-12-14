@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, StyleSheet, View, Button, TextInput, Image, Picker, FlatList, Alert, TouchableOpacity} from 'react-native';
 import { Icon } from 'native-base'
 import Modal from "react-native-modal";
-import { createStackNavigator } from 'react-navigation';
+
 
 export default class ProjectMob extends Component {
     //header bar details (Cannot be shown if the main screen file is missing!!!)
