@@ -39,7 +39,7 @@ export default class Sec_transfer_3_5 extends Component {
   }
 
   static navigationOptions = {
-    title: 'การอนุมัติรับการโอนย้ายระหว่างหน่วยงาน',
+    title: 'การอนุมัติครุภัณฑ์',
     headerTitleStyle: {
       fontWeight: 'bold'
     }

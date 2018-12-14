@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
 export default class AssetsDetails extends Component {
+    static navigationOptions = {
+        title: 'รายละเอียดครุภัณฑ์',
+        headerStyle: { //They can be customized later.
+            backgroundColor: 'orange', 
+        },
+        headerTintColor: 'white',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
+    }
     render() {
         return (
             <View style={{ flex: 1, backgroundColor: 'white' }}>

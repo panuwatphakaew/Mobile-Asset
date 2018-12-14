@@ -39,7 +39,7 @@ export default class Sec_transfer_3_5 extends Component {
   }
 
   static navigationOptions = {
-    title: 'การอนุมัติรับการโอนย้ายระหว่างหน่วยงาน',
+    title: 'การเปลี่ยนสถานที่ใช้งาน',
     headerTitleStyle: {
       fontWeight: 'bold'
     }
@@ -86,11 +86,11 @@ export default class Sec_transfer_3_5 extends Component {
           <View style={{ padding: 10 }}>
           <Button
             icon={{
-              name: 'done-all',
+              name: 'edit',
               size: 15,
-              type: 'MaterialIcons'
+              type: 'FontAwesome'
             }}
-            title='อนุมัติทั้งหมด'
+            title='สร้างรายการ'
           />
         </View>
           </TouchableOpacity>

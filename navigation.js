@@ -25,6 +25,13 @@ import Bosscomfim from "./Bosscomfim";
 import Bosshome from "./Bosshome";
 import Bosslist from "./Bosslist";
 import Bosspremisstion from "./Bosspremisstion";
+import secretaryhome from "./secretaryhome";
+import secretaryselect from "./secretaryselect";
+import changelocationMain from "./changelocationMain";
+import changecreat from "./changecreat";
+import Getitem from "./Getitem";
+import BossSend from "./BossSend";
+import Bossitems from "./Bossitems";
 
 
 // -------------- Navigation Stack -----------------
@@ -52,11 +59,17 @@ const RootStack = createStackNavigator(
         Bosshome:Bosshome,
         Bosslist:Bosslist,
         Bosspremisstion:Bosspremisstion,
-        
+        secretaryhome:secretaryhome,
+        secretaryselect:secretaryselect,
+        changelocationMain:changelocationMain,
+        changecreat:changecreat,
+        Getitem:Getitem,
+        BossSend:BossSend,
+        Bossitems:Bossitems,
     },
     {
         //starting page
-        initialRouteName: 'NormalEmployees',
+        initialRouteName: 'Login',
     }
 );
 

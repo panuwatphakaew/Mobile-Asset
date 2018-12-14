@@ -45,9 +45,9 @@ export default class ProjectMob extends Component {
                 <Text style={{textAlign: 'right'}}>152 รายการ</Text>
                 <View style={{borderBottomColor: 'black',borderBottomWidth: 1,}}/>
                 <View style={styles.rowflat}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('AssetDetails')}>
                 <View style={{flexDirection: 'row'}}>
-                <Icon name="qrcode-scan" type="MaterialCommunityIcons" style={styles.icon} onPress={() => this.props.navigation.navigate('AssetDetails')}></Icon>
+                <Icon name="qrcode-scan" type="MaterialCommunityIcons" style={styles.icon}></Icon>
                 <Text>สแกน Code</Text>
                 </View>
                 </TouchableOpacity>
@@ -59,19 +59,13 @@ export default class ProjectMob extends Component {
                 </TouchableOpacity>
                 </View>
                 </View>                
-                <Text style={{fontWeight: 'bold'}}>การอนุมัติครุภัณฑ์</Text>
+                <Text style={{fontWeight: 'bold'}}>การจัดการครุภัณฑ์</Text>
                 <View style={{borderBottomWidth: 1, borderLeftWidth: 1, borderRightColor: 1, borderTopWidth: 1}}>
-                <Text>รายการที่ยังไม่ได้อนุมัติทั้งหมด</Text>
+                <Text>รายการคงค้างทั้งหมด</Text>
                 <Text style={{textAlign: 'right'}}>5 รายการ</Text>
                 <View style={{borderBottomColor: 'black',borderBottomWidth: 1,}}/>
                 <View style={styles.rowflat}>
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Bosspremisstion')}>
-                <View style={{flexDirection: 'row'}}>
-                <Icon name="account-edit" type="MaterialCommunityIcons" style={styles.icon}></Icon>
-                <Text>จัดการผู้มีสิทธิ์อนุมัติ</Text>
-                </View>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Bosscomfim')}>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('secretaryselect')}>
                 <View style={{flexDirection: 'row'}}>
                 <Icon name="find-in-page" type="MaterialIcons" style={styles.icon}></Icon>
                 <Text>ดูรายการทั้งหมด</Text>
