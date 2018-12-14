@@ -3,6 +3,9 @@ import { Text, Image, View, StyleSheet } from 'react-native';
 import { Icon } from 'native-base';
 
 export default class NormalEmployee extends Component {
+  static navigationOptions = {
+    header:null
+}
   render() {
     return (
       <View style={{flex: 1, backgroundColor: 'white'}}>
