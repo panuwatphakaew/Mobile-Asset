@@ -12,6 +12,7 @@ import itemMiss from './itemMiss';
 import AssetDetails from './AssetDetails';
 import ViewAssets from './ViewAssets';
 
+import NormalEmployees from './NormalEmployees';
 
 // -------------- Navigation Stack -----------------
 const RootStack = createStackNavigator(
@@ -26,6 +27,7 @@ const RootStack = createStackNavigator(
         itemMiss:itemMiss,
         AssetDetails:AssetDetails,
         ViewAssets:ViewAssets,
+        NormalEmployees,NormalEmployees
     },
     {
         //starting page
