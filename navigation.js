@@ -5,6 +5,11 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import Login from './Login';
 import UncheckedItem from './uncheckedItem';
 import Report from './reportBrokenBarcode';
+import locationitemmiss from './locationItemMiss';
+import roomItemMiss from './roomItemMiss';
+import detailItem from './detailItem';
+import itemMiss from './itemMiss';
+
 
 // -------------- Navigation Stack -----------------
 const RootStack = createStackNavigator(
@@ -13,10 +18,14 @@ const RootStack = createStackNavigator(
         Report: Report,
         Login: Login,
         UncheckedItem: UncheckedItem,
+        Locationitemmiss:locationitemmiss,
+        roomItemMiss:roomItemMiss,
+        detailItem:detailItem,
+        itemMiss:itemMiss,
     },
     {
         //starting page
-        initialRouteName: 'Login',
+        initialRouteName: 'detailItem',
     }
 );
 

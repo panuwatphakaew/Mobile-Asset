@@ -17,12 +17,13 @@ export default class HomeScreen extends Component {
     checkLogin = () => {
         let user = this.state.username
         let pass = this.state.password
+        
         if(user==""||pass==""){
             Alert.alert('กรุณากรอก Username และ Password')
         }else if(user=="user01"&&pass=="1234"){
             this.props.navigation.navigate('UncheckedItem')
         }else if(user=="user02"&&pass=="1234"){
-            this.props.navigation.navigate('UncheckedItem')
+            this.props.navigation.navigate('Locationitemmiss')
         }else if(user=="user03"&&pass=="1234"){
             this.props.navigation.navigate('UncheckedItem')
         }else if(user=="user04"&&pass=="1234"){
