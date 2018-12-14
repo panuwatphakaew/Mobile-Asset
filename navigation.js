@@ -13,6 +13,11 @@ import AssetDetails from './AssetDetails';
 import ViewAssets from './ViewAssets';
 
 import NormalEmployees from './NormalEmployees';
+import detailTransferBetween from "./detailTransferBetween";
+import selectDepartment from "./selectDepartment";
+import transferBetweenDepartment from "./transferBetweenDepartment";
+import comfirmItem from "./comfirmItem";
+
 
 // -------------- Navigation Stack -----------------
 const RootStack = createStackNavigator(
@@ -27,7 +32,12 @@ const RootStack = createStackNavigator(
         itemMiss:itemMiss,
         AssetDetails:AssetDetails,
         ViewAssets:ViewAssets,
-        NormalEmployees,NormalEmployees
+        NormalEmployees,NormalEmployees,
+        detailTransferBetween:detailTransferBetween,
+        selectDepartment:selectDepartment,
+        transferBetweenDepartment:transferBetweenDepartment,
+        comfirmItem:comfirmItem,
+        
     },
     {
         //starting page
