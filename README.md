@@ -1,5 +1,6 @@
 # Mobile-Asset
 Project 20 point
+<<<<<<< HEAD
 
 
 # USER TEST!
@@ -20,3 +21,5 @@ password : 1234
 username : user04
 password : 1234
 ```
+=======
+>>>>>>> Revert "no message"
